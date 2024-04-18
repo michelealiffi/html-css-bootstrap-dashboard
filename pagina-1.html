@@ -9,7 +9,7 @@
   </head>
   <body class="d-md-flex">
       <header>
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-md-block d-lg-block d-xl-block" style="width: 300px; height: 870px;">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-md-block d-lg-block d-xl-block min-vh-100 pe-5">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
             <span class="fs-4">Bootstrap Dashboard</span>
           </a>
@@ -59,86 +59,289 @@
             </ul>
           </div>
         </div>
-        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary">
-          <nav class="navbar navbar-expand-lg bg_ocean_dark p-3 fixed-top d-none d-xs-block d-sm-block d-md-none">
+          <nav class="navbar bg-tertiary sticky-top shadow d-md-none">
             <div class="container-fluid">
-              <a class="navbar-brand fw-bold text-white" href="#"></a>
-              <button class="navbar-toggler navbar-dark bg-body-tertiary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ms-auto text-uppercase">
-                  <li class="nav-item d-none d-sm-block d-md-none">
-                    <a class="nav-link active fw-semibold " aria-current="page" href="#">Portfolio</a>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex d-md-none">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="#">Dashboard</a>
                   </li>
-                  <li class="nav-item d-none d-sm-block d-md-none">
-                    <a class="nav-link active fw-semibold" href="#">About</a>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pagina-2.html">Sponsorizzazione</a>
                   </li>
-                  <li class="nav-item d-none d-sm-block d-md-none">
-                    <a class="nav-link active fw-semibold" href="#">Contact</a>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="pagina-1.html">Prodotti</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pagina-3.html">Nuovo Prodotto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Clienti</a>
+                  </li>
+                  <li class="nav-item">
+                    <hr>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Impostazioni</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Profilo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Esci</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>
-          <a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom d-none d-sm-block d-md-none bg-body-tertiary">
-            <span class="fs-5 fw-semibold">Bootstrap Dashboard</span>
-          </a>
-        </div>
       </header>
       <main>
-        <div class="d-flex flex-column align-items-stretch flex-shrink-0">
-          <a class="d-flex align-items-center flex-shrink-0 p-3 link-body-emphasis text-decoration-none border-bottom justify-content-between ">
-            <span class="fs-3 fw-semibold">10 prodotti trovati</span>
-          </a>
-          <div class="d-flex align-items-center flex-shrink-0 pt-3 px-3 link-body-emphasis text-decoration-none border-bottom justify-content-between">
-            <p>Nome</p>
-            <div class="d-flex align-items-center flex-shrink-0 link-body-emphasis text-decoration-none top-0 end-0">
-              <p>Prezzo</p>
-              <p>Azioni</p>
+        <div class="container-fluid">
+          <div class="row">
+            <a class="p-3 link-body-emphasis text-decoration-none border-bottom col-10">
+              <span class="fs-3 fw-semibold">10 prodotti trovati</span>
+            </a>
+            <div class="btn-group col-1 p-3">
+              <a class="btn btn-outline-secondary">Esporta</a>
+              <a href="pagina-3.html" class="btn btn-outline-secondary">Nuovo</a>
             </div>
-          </div>
-
-
-
-          <div class="list-group list-group-flush border-bottom scrollarea" style="width: 1326px;">
-            <a href="#" class="list-group-item list-group-item-action lh-sm" aria-current="true">
-              <div class="d-flex w-100 align-items-center">
-                <div class="col-7 mb-1 d-flex">
-                  <img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt="">
-                  <p>Smarthphone Samsung Galaxy S21</p>
-                </div>
-                <div class="col-6 d-flex">
-                  <p>799.00 &euro;</p>
-                  <button type="button" class="btn btn-outline-primary m-1">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="col-1 pt-3" scope="col">Nome</th>
+                  <th class="col-10 pt-3" scope="col"></th>
+                  <th class="col-1 pt-3" scope="col">Prezzo</th>
+                  <th class="col-1 d-none d-lg-block pt-3" scope="col">Stato</th>
+                  <th class="col-1 pt-3" scope="col">Azioni</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="col-1">
+                    <img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col">
+                    Smarthphone Samsung Galaxy S21
+                    <p class="text-secondary">Display AMOLED, Fotocamera Ultra Wide, Batteria a lunga durata</p>
+                  </td>
+                  <td class="col-1 pt-3">799.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
+                    <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
+                  </td>
+                  <td class="col-1 d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
                       <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                  </button>
-                  <button type="button" class="btn
-                  btn-outline-danger m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                  <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header border-bottom-0">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Elimina prodotto</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> 
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        L`eliminazione sarà irreversibile, sei sicuro?
-                      </div>
-                      <div class="modal-footer justify-content-between">
-                        <button type="button" class="btn rounded-0 text-primary col-5 fw-bold" data-bs-dismiss="modal">Si, continua</button>
-                        <div class="vr p-0 m-0"></div>
-                        <button type="button" class="btn rounded-0 col-5 text-primary" data-bs-dismiss="modal">Annulla</button>
-                      </div>
-                    </div>
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col">
+                    Apple MacBook Pro 13"
+                    <p class="text-secondary">Processore M1. SSD ultraveloce, Display Retina</p>
+                  </td>
+                  <td class="col pt-3">1299.00 &euro;</td>
+                  <td class="col d-none d-lg-block">
+                    <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
+                  </td>
+                  <td class="col d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
+                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-1"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col-6">
+                    Smartwatch Apple Watch Series 6
+                    <p class="text-secondary">Monitoraggio attività, Misurazione ossigenonel sangui, Display Always-On</p>
+                  </td>
+                  <td class="col-2 pt-3">429.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
+                    <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
+                  </td>
+                  <td class="col-2 d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
+                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-1"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col-6">
+                    Auricolari Wireless Apple AirPods Pro
+                    <p class="text-secondary">Cancellazione attiva del rumore, Resistenza all'acqua e al sudore</p>
+                  </td>
+                  <td class="col-2 pt-3">279.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
+                    <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
+                  </td>
+                  <td class="col-2 d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
+                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-1"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col-6">
+                    Console Sony PlayStation 5
+                    <p class="text-secondary">Gamma ad alta definizione, Tempi di caricamento rapidi, Supporto per giochi 4K</p>
+                  </td>
+                  <td class="col-2 pt-3">499.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
+                    <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
+                  </td>
+                  <td class="col-2 d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
+                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-1"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col-6">
+                    Monitor Gaming ASUS ROG Strix XG27UQ
+                    <p class="text-secondary">Schermo 4K UHD, Frequenza di aggiornamento 144Hz, Tecnologia HDR</p>
+                  </td>
+                  <td class="col-2 pt-3">999.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
+                    <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
+                  </td>
+                  <td class="col-2 d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
+                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-1"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col-6">
+                    Stampante Multifunzione HP Laser Jet Pro MFP M28w
+                    <p class="text-secondary">Stampa, Scansione, Copia, Connessione Wi-Fi</p>
+                  </td>
+                  <td class="col-2 pt-3">159.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
+                    <img class="border border-danger rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/xmark-solid.svg" alt="">
+                  </td>
+                  <td class="col-2 d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
+                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-1"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col-6">
+                    Router Wi-Fi Mesh TP-Link Deco X20
+                    <p class="text-secondary">Copertura fino a 560mq, Velocità fino a 1800 Mbps, Gestione tramite app</p>
+                  </td>
+                  <td class="col-2 pt-3">199.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
+                    <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
+                  </td>
+                  <td class="col-2 d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
+                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-1"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col-6">
+                    SSD NVMe Western Digital Black SN850
+                    <p class="text-secondary">Monitoraggio attività, Capacità 1TB, Velocità di lettura fino a 7000MB/s, Tecnologia PCIe Gen4</p>
+                  </td>
+                  <td class="col-2 pt-3">229.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
+                    <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
+                  </td>
+                  <td class="col-2 d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
+                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="col-1"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col-6">
+                    Mouse Gaming Logitech G502 HERO
+                    <p class="text-secondary">Sensore HERO 25K, 11 pulsanti programmabili, Peso personalizzabile</p>
+                  </td>
+                  <td class="col-2 pt-3">79.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
+                    <img class="border border-danger rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/xmark-solid.svg" alt="">
+                  </td>
+                  <td class="col-2 d-flex mt-3">
+                    <button type="button" class="btn btn-outline-primary me-1">
+                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                    </button>
+                    <button type="button" class="btn
+                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header border-bottom-0 pb-5">
+                    <h1 class="modal-title fs-5 position-absolute top-50 start-50 translate-middle pb-5" id="exampleModalLabel">Elimina prodotto</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> 
+                    </button>
+                  </div>
+                  <div class="modal-body text-center">
+                    L`eliminazione sarà irreversibile, sei sicuro?
+                  </div>
+                  <div class="modal-footer justify-content-between">
+                    <button type="button" class="btn rounded-0 text-primary col-5 fw-bold" data-bs-dismiss="modal">Si, continua</button>
+                    <div class="vr p-0 m-0"></div>
+                    <button type="button" class="btn rounded-0 col-5 text-primary" data-bs-dismiss="modal">Annulla</button>
                   </div>
                 </div>
-                </div>
               </div>
-            </a>
+          </div>
           </div>
         </div>
       </main>
