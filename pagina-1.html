@@ -9,7 +9,7 @@
   </head>
   <body class="d-md-flex">
       <header>
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-md-block d-lg-block d-xl-block min-vh-100 pe-5">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-md-block d-lg-block d-xl-block w-100 h-100 pe-5">
           <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
             <span class="fs-4">Bootstrap Dashboard</span>
           </a>
@@ -59,7 +59,7 @@
             </ul>
           </div>
         </div>
-          <nav class="navbar bg-tertiary sticky-top shadow d-md-none">
+          <nav class="navbar sticky-top shadow d-md-none">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Bootstrap Dashboard</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -102,7 +102,7 @@
       <main>
         <div class="container-fluid">
           <div class="row">
-            <a class="p-3 link-body-emphasis text-decoration-none border-bottom col-10">
+            <a class="p-3 link-body-emphasis text-decoration-none border-bottom col-11">
               <span class="fs-3 fw-semibold">10 prodotti trovati</span>
             </a>
             <div class="btn-group col-1 p-3">
@@ -114,51 +114,55 @@
                 <tr>
                   <th class="col-1 pt-3" scope="col">Nome</th>
                   <th class="col-10 pt-3" scope="col"></th>
-                  <th class="col-1 pt-3" scope="col">Prezzo</th>
+                  <th class="col-2 pt-3" scope="col">Prezzo</th>
                   <th class="col-1 d-none d-lg-block pt-3" scope="col">Stato</th>
-                  <th class="col-1 pt-3" scope="col">Azioni</th>
+                  <th class="col-2 pt-3" scope="col">Azioni</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th class="col-1">
                     <img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
-                  <td class="col">
+                  <td class="col-6">
                     Smarthphone Samsung Galaxy S21
                     <p class="text-secondary">Display AMOLED, Fotocamera Ultra Wide, Batteria a lunga durata</p>
                   </td>
-                  <td class="col-1 pt-3">799.00 &euro;</td>
+                  <td class="col-2 pt-3">799.00 &euro;</td>
                   <td class="col-1 d-none d-lg-block">
                     <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
                   </td>
-                  <td class="col-1 d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
                 <tr>
-                  <th class="col"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
-                  <td class="col">
+                  <th class="col-1"><img style="width: 50px; height: 50px;" src="img/866-536x354.jpg" alt=""></th>
+                  <td class="col-6">
                     Apple MacBook Pro 13"
                     <p class="text-secondary">Processore M1. SSD ultraveloce, Display Retina</p>
                   </td>
-                  <td class="col pt-3">1299.00 &euro;</td>
-                  <td class="col d-none d-lg-block">
+                  <td class="col-2 pt-3">1299.00 &euro;</td>
+                  <td class="col-1 d-none d-lg-block">
                     <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
                   </td>
-                  <td class="col d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -171,14 +175,16 @@
                   <td class="col-1 d-none d-lg-block">
                     <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
                   </td>
-                  <td class="col-2 d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -191,14 +197,16 @@
                   <td class="col-1 d-none d-lg-block">
                     <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
                   </td>
-                  <td class="col-2 d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -211,14 +219,16 @@
                   <td class="col-1 d-none d-lg-block">
                     <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
                   </td>
-                  <td class="col-2 d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -231,14 +241,16 @@
                   <td class="col-1 d-none d-lg-block">
                     <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
                   </td>
-                  <td class="col-2 d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -251,14 +263,16 @@
                   <td class="col-1 d-none d-lg-block">
                     <img class="border border-danger rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/xmark-solid.svg" alt="">
                   </td>
-                  <td class="col-2 d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -271,14 +285,16 @@
                   <td class="col-1 d-none d-lg-block">
                     <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
                   </td>
-                  <td class="col-2 d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -291,14 +307,16 @@
                   <td class="col-1 d-none d-lg-block">
                     <img class="border border-success rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/check-solid.svg" alt="">
                   </td>
-                  <td class="col-2 d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
                 <tr>
@@ -311,14 +329,16 @@
                   <td class="col-1 d-none d-lg-block">
                     <img class="border border-danger rounded-4 mt-3 p-2" style="width: 35px; height: 35px;" src="img/xmark-solid.svg" alt="">
                   </td>
-                  <td class="col-2 d-flex mt-3">
-                    <button type="button" class="btn btn-outline-primary me-1">
-                      <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
-                    </button>
-                    <button type="button" class="btn
-                    btn-outline-danger ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
-                    </button>
+                  <td class="col-2 mt-3">
+                    <div class="d-flex mt-3">
+                      <button type="button" class="btn btn-outline-primary me-1">
+                        <img style="width: 20px; height: 20px;" src="img/pencil-solid.svg" alt="">
+                      </button>
+                      <button type="button" class="btn
+                      btn-outline-danger  ms-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <img style="width: 20px; height: 20px;" src="img/trash-solid.svg" alt="">
+                      </button>
+                    </div>
                   </td>
                 </tr>
               </tbody>
